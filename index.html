@@ -172,8 +172,8 @@
 
 
 							<div class="single-package-item-txt">
-								<h3>Couple (Oct) <span class="pull-right"> 2725$</span></h3>
-								<h3>Couple (Nov) <span class="pull-right"> 3120$</span></h3>
+								 
+								<h3>For Couple <span class="pull-right"> 3120$</span></h3>
 								<div class="packages-para">
 					 			<p>   <i class="fa fa-angle-right"></i>   <strong> 2 Night beachFront Villa </strong>  </p>
 					 			<p><i class="fa fa-angle-right"></i> <strong> 1 Night InOcean Pool Villa </strong>  </p>
@@ -496,7 +496,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="dicount-offer-content text-center">
-						<h2>Join with us within 31 Oct, 2023 and get upto 40% Discount, and within 10 November and get upto 30% Discount</h2>
+						<h2>Join with us within 15 December, 2023 and get upto 30% Discount</h2>
 						<div class="campaign-timer">
 							<div id="timer">
 								<div class="time time-after" id="days">
@@ -692,11 +692,11 @@
 			</div>
 			<div class="foot-icons ">
 				<ul class="footer-social-links list-inline list-unstyled">
-					<li><a href="#" target="_blank"
+					<li><a href="https://www.facebook.com/risingstarsllp" target="_blank"
 							class="foot-icon-bg-1"><i class="fa fa-facebook"></i></a></li>
 					<li><a href="#" target="_blank" class="foot-icon-bg-2"><i
 								class="fa fa-youtube"></i></a></li>
-					<li><a href="#" target="_blank"
+					<li><a href="https://www.instagram.com/risingstars.holidays/?fbclid=IwAR2K9Aha4eZE_E5WBNfnL1dZLCdpGMJKNQC8iYytSy_q-HELMWLNbW-VD_U" target="_blank"
 							class="foot-icon-bg-3"><i class="fa fa-instagram"></i></a></li>
 				</ul>
 			</div>
@@ -783,11 +783,9 @@
 								<p class="foot-email"><a
 										href="mailto:risingstarsholidays@gmail.com">risingstarsholidays@gmail.com</a></p>
 								<p> <a href="https://maps.app.goo.gl/qTCVAtX7L1uQd94x8" target="_blank"> 
-									Rising Stars Holidays: Budhabar,Teh-Mukerian, Dist- Hoshiarpur, Punjab PIN-144221
+									Rising Stars Holidays: Budhabar, Dist- Hoshiarpur, Punjab PIN-144221
 								</a></p>
-								<!-- <p>Opposite Central Bank of India, Near Sathya medicos,
-									 VPO Barwala Disit, Panchkula, Haryana- 134118
-									</p> -->
+						 
 							</div><!--/.single-footer-txt-->
 						</div><!--/.single-footer-item-->
 					</div><!--/.col-->
@@ -866,97 +864,7 @@
 	<script src="https://smtpjs.com/v3/smtp.js">
 	</script>
 
-	<!-- Onload Modal JS -->
-	<script>
-		// Automatically display the modal when the page loads
-		window.addEventListener('load', () => {
-			const modal = document.getElementById('modal');
-			modal.style.display = 'flex';
-		});
-
-		//fucntion which is taking payload and sending email using SMTP
-		async function sendDataToServer(data) {
-			try {
-
-				const dataString = `
-				<div style="background-color: #f2f2f2; padding: 20px; margin: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
-				<h3 style="font-size: 24px; margin-bottom: 5px; color: blue; ">Travel Inquiry Form</h3>
-				
-				<h3 style="font-size: 18px; ">Name:</h3>
-				<p style="font-size: 16px; ">${data.name}</p>
-				
-				<h3 style="font-size: 18px;">Email:</h3>
-				<p style="font-size: 16px; ">${data.email}</p>
-				
-				<h3 style="font-size: 18px;">Contact:</h3>
-				<p style="font-size: 16px; ">${data.contact}</p>
-				
-				<h5 style="font-size: 16px; margin-top: 5px;">Message:</h5>
-				<p style="font-size: 16px; ">${data.message}</p>
-				</div>
-						`;
-
-				// Send the email with the data to SMTP
-				const result = await Email.send({
-					Host: "smtp.elasticemail.com",
-					Username: "exploreezyholidays@gmail.com",
-					Password: "971FCAF52C2E0F6DD4D3FEB26152D7790A9F",
-					To: 'exploreezyholidays@gmail.com',
-					From: "Exploreezyholidays.com <exploreezyholidays@gmail.com>",
-					Subject: "Travel Inquiry Form",
-					Body: dataString,
-				});
-
-				// Check if the email was sent successfully
-				if (result === "OK") {
-					modal.style.display = 'none';
-					form.reset();
-					// alert("Form submitted successfully!");
-				} else {
-					console.log(result)
-					throw new Error("Failed to submit the form data");
-				}
-			} catch (error) {
-				console.error(error);
-				alert("An error occurred while submitting the form data");
-			}
-		}
-
-
-
-		//handle events onlick of Cancel Btn
-		const cancelBtn = document.getElementById('cancelBtn');
-		cancelBtn.addEventListener('click', () => {
-			modal.style.display = 'none';
-			form.reset();
-		});
-
-		//handle events onlick of sumitbtn 
-		const submitBtn = document.getElementById('submitBtn');
-		submitBtn.addEventListener('click', () => {
-			// Get input values
-			const name = document.getElementById('name').value;
-			const email = document.getElementById('email').value;
-			const contact = document.getElementById('contact').value;
-			const message = document.getElementById('message').value;
-
-			if (!name || !email || !contact || !message) {
-				document.getElementById("error-message").style.display = "block";
-			} else {
-				const formData = {
-					name: name,
-					email: email,
-					contact: contact,
-					message: message,
-				};
-				// Calling the function with payload
-				sendDataToServer(formData);
-			}
-
-
-		});
-
-	</script>
+	 
 
 
 </body>

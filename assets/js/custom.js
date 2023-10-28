@@ -68,7 +68,7 @@ $(document).ready(function(){
         
         function makeTimer() {
 
-                var endTime = new Date("November 10, 2023 12:00:00 PDT");            
+                var endTime = new Date("December 15, 2023 12:00:00 PDT");            
                 var endTime = (Date.parse(endTime)) / 1000;
 
                 var now = new Date();
